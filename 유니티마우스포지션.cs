@@ -5,7 +5,7 @@ Vector3 mousePos = Input.mousePosition;
 mousePos.z = 값; 
 
 //월드 좌표로 변환
-Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);  or   Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 //부드럽게 따라가기 
 transform.position = Vector3.Lerp(transform.position, worldPos, 0.1f);
